@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beautiful Simple Webpage</title>
+</head>
+<style>
+    *{
+        font-family: 'segoe UI' ,'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bolder;
+   /* global reseting */
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   justify-content: center;
+
+    
+}
+/* CSS for navbarm */
+.nav
+{
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(94, 1, 1);
+    align-items: center;
+}
+
+.smallicon,.logo,.btn
+{
+    height: 100px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.smallicon>img
+{
+    height: 50px;
+    width: 50px;
+}
+
+.smallicon
+{
+    width: 100px;
+}
+
+.logo>img
+{
+    height: 159px;
+    width: 137px;
+    transition: all 0.3s;
+    padding: 0,0,0,5 ;
+}
+
+.nav-button
+{
+    height: 37px;
+    width: 80px;
+    border: none;
+    border-radius: 10px;
+    background: rgb(183, 178, 178);
+}
+
+.nav-button:hover
+{
+    background: rgba(rgb(80, 74, 74), green, blue, 6);
+}
+.logo>img:hover
+{
+    height: 100px;
+    width: 87px;
+
+}
+
+
+    /* CSS for the form*/
+
+    .form-holder{
+        background-color: aqua;
+        height: 90vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    form{
+        text-align: center;
+        padding: 20px;
+        width: 400px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 10px rgba(red, green, blue, 6);
+        background-color: rgb(2, 82, 82);
+        
+     }
+     .from-items{
+        display: flex;
+       justify-content: space-evenly;
+       align-items: center;
+       flex-direction: column;
+       padding: 15px 10px;
+        
+    }
+
+    label{
+        padding: 0px 0px 5px 0px;
+        transition: all 0.25;
+     
+    }
+
+    .gender-block{
+        padding: 10px;
+        width: 70%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .from-items>button{
+        width: 100%;
+        padding: 10px 20px;
+        border-radius: 10px;
+        border: none;
+        background: rgb(94, 1, 1)
+        color( red green blue)
+        transition: all 0.4s;
+    }
+
+.form-items label:hover{
+    background-color: brown;
+}
+
+.form-items>button:hover{
+    background-color: black;
+}
+h1{
+    color: rgb(33, 15, 2);
+}
+
+.form-items input{
+    padding: 8px 20px;
+    border-radius: 10px;
+    border: 1px solid powderblue;
+    outline: none;
+    width: 90%;
+}
+
+
+</style>
+<body>
+    <div class="nav">
+        <div class="smallicon">
+            <img src="https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="">
+        </div>
+        <div class="logo">
+            <img src="" alt="">
+        </div>
+        <div class="btn">
+            <button class="nav-button">LOGIN</button>
+            <button class="nav-button">SIGNUP</button>
+        </div>
+    </div>
+ 
+
+ <div class="from-holder">
+    <form action="">
+        <h1>SIGNUP PAGE!</h1>
+        <hr>
+        <div class="from-items">
+            <label for="username">USERNAME</label>
+            <input type="text" id="username">
+        </div>
+        <div class="from-items">
+            <label for="password">PASSWORD</label>
+            <input type="text" id="password">
+        </div>
+        <div class="from-items">
+            <label for="email">EMAIL</label>
+            <input type="email" id="email">
+        </div>
+
+        <div class="from-items">
+            <label for="phone">PHONE</label>
+            <input type="number" id="phone">
+        </div>
+
+        <div class="from-items">
+            <label for="dob">DOB</label>
+            <input type="date" id="dob">
+        </div>
+
+        <div class="from-items">
+            
+            <label for="gender">GENDER</label>
+            <div class="gender-block">
+             MALE <input type="radio" name="gender">
+             FEMALE <input type="radio" name="gender">
+        </div>
+    </div>
+    <div class="form-item">
+        <button>REGISTER</button>
+    </div>
+    <div class="form-item">
+        <a href="./login.html">ALREADY HAVE AN ACCOUNT ?</a>
+    </div>
+
+    </form>
+ </div>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
